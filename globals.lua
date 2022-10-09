@@ -1,7 +1,7 @@
 -- local lunajson = require "lunajson"
 
 ASTEROID_SIZE = 100
-show_debugging = false
+show_debugging = true
 destroy_ast = false
 
 function calculateDistance(x1, y1, x2, y2)

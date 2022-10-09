@@ -3,13 +3,14 @@ local love = require "love"
 local Player = require "objects/Player"
 local Game = require "states/Game"
 local Menu = require "states/Menu"
-math.random(os.time())
+
+" test remove git content"
 
 function love.load()
     love.mouse.setVisible(false)
     mouse_x, mouse_y = 0, 0
 
-    player = Player(1)
+    player = Player()
     game = Game()
     -- game:startNewGame(player)
     menu = Menu(game, player) -- we now create a menu object

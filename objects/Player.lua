@@ -167,7 +167,7 @@ function Player(num_lives)
                 local FPS = love.timer.getFPS()
                 local friction = 0.7
     
-                self.rotation = 2 * math.pi / FPS
+                self.rotation = math.pi / FPS
 
                if love.keyboard.isDown("a") or love.keyboard.isDown("left") or love.keyboard.isDown("kp4") then
                     self.angle = self.angle + self.rotation
